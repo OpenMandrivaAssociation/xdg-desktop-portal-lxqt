@@ -10,7 +10,7 @@ Source0:       https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download
 BuildRequires: cmake
 BuildRequires: pkgconfig(libfm-qt)
 BuildRequires: cmake(Qt5Core)
-BuildRequires: cmake(Qt5Dbus)
+BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5X11Extras)
 BuildRequires: cmake(KF5WindowSystem)

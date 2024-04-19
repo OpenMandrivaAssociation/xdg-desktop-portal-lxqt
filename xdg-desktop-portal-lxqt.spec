@@ -1,5 +1,5 @@
 Name:          xdg-desktop-portal-lxqt
-Version:       0.5.0
+Version:       1.0.1
 Release:       1
 Summary:       A backend implementation for xdg-desktop-portal
 License:       LGPLv2.1
@@ -8,12 +8,11 @@ URL:           https://lxqt-project.org/
 Source0:       https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires: cmake
-BuildRequires: pkgconfig(libfm-qt)
-BuildRequires: cmake(Qt5Core)
-BuildRequires: cmake(Qt5DBus)
-BuildRequires: cmake(Qt5Widgets)
-BuildRequires: cmake(Qt5X11Extras)
-BuildRequires: cmake(KF5WindowSystem)
+BuildRequires: pkgconfig(libfm-qt6)
+BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6DBus)
+BuildRequires: cmake(Qt6Widgets)
+BuildRequires: cmake(KF6WindowSystem)
 
 Requires:  kwindowsystem
 Requires:  xdg-desktop-portal

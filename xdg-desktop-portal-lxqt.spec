@@ -1,6 +1,6 @@
 Name:          xdg-desktop-portal-lxqt
 Version:       1.0.1
-Release:       2
+Release:       3
 Summary:       A backend implementation for xdg-desktop-portal
 License:       LGPLv2.1
 Group:         Graphical desktop/KDE
@@ -15,7 +15,8 @@ BuildRequires:	cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(KF6WindowSystem)
 
-Requires:	kwindowsystem
+Requires:	kf6-kwindowsystem
+Suggests:	kf6-kwindowsystem-backend-x11
 Requires:	xdg-desktop-portal
 Requires:	libfm-qt
 Provides:	xdg-desktop-portal-implementation

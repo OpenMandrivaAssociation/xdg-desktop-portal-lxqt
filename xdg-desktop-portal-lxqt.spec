@@ -42,3 +42,4 @@ Qt/KF6/libfm-qt.
 %{_datadir}/applications/org.freedesktop.impl.portal.desktop.lxqt.desktop
 %{_datadir}/dbus-1/services/org.freedesktop.impl.portal.desktop.lxqt.service
 %{_datadir}/xdg-desktop-portal/portals/lxqt.portal
+%{_datadir}/xdg-desktop-portal/lxqt-portals.conf

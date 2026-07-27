@@ -1,41 +1,27 @@
 Name:          xdg-desktop-portal-lxqt
 Version:       1.4.0
-Release:       1
+Release:       2
 Summary:       A backend implementation for xdg-desktop-portal
 License:       LGPLv2.1
 Group:         Graphical desktop/KDE
 URL:           https://lxqt-project.org/
 Source0:       https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/%{version}/%{name}-%{version}.tar.xz
+BuildSystem:   cmake
+BuildRequires: pkgconfig(libfm-qt6)
+BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6DBus)
+BuildRequires: cmake(Qt6Widgets)
+BuildRequires: cmake(KF6WindowSystem)
 
-BuildRequires:	cmake
-BuildRequires:	ninja
-BuildRequires:	pkgconfig(libfm-qt6)
-BuildRequires:	cmake(Qt6Core)
-BuildRequires:	cmake(Qt6DBus)
-BuildRequires:	cmake(Qt6Widgets)
-BuildRequires:	cmake(KF6WindowSystem)
-
-Requires:	kf6-kwindowsystem
-Suggests:	kf6-kwindowsystem-backend-x11
-Requires:	xdg-desktop-portal
-Requires:	libfm-qt
-Provides:	xdg-desktop-portal-implementation
+Requires: kf6-kwindowsystem
+Suggests: kf6-kwindowsystem-backend-x11
+Requires: xdg-desktop-portal
+Requires: libfm-qt
+Provides: xdg-desktop-portal-implementation
 
 %description
 A backend implementation for xdg-desktop-portal that is using
 Qt/KF6/libfm-qt.
-
-%prep
-%autosetup -p1
-
-%conf
-%cmake -G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
 
 %files
 %{_libexecdir}/xdg-desktop-portal-lxqt

@@ -1,6 +1,6 @@
 Name:          xdg-desktop-portal-lxqt
 Version:       1.4.0
-Release:       2
+Release:       3
 Summary:       A backend implementation for xdg-desktop-portal
 License:       LGPLv2.1
 Group:         Graphical desktop/KDE

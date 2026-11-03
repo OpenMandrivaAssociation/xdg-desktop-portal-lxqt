@@ -1,13 +1,14 @@
 Name:          xdg-desktop-portal-lxqt
 Version:       1.4.0
-Release:       3
+Release:       4
 Summary:       A backend implementation for xdg-desktop-portal
 License:       LGPLv2.1
 Group:         Graphical desktop/KDE
 URL:           https://lxqt-project.org/
 Source0:       https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:   cmake
-BuildRequires: pkgconfig(libfm-qt6)
+BuildRequires: cmake(fm-qt6) >= 2.5.0
+BuildRequires: cmake(Qt6GuiPrivate)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6DBus)
 BuildRequires: cmake(Qt6Widgets)

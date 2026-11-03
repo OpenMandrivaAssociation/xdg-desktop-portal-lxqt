@@ -8,6 +8,7 @@ URL:           https://lxqt-project.org/
 Source0:       https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:   cmake
 BuildRequires: cmake(fm-qt6) >= 2.5.0
+BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: cmake(Qt6GuiPrivate)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6DBus)
